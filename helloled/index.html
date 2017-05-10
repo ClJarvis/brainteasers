@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--string representation of LED screen
+Print Hello on top on screen.
+
+Tech
+any language
+handle edge cases and exceptions
+
+UI
+One TextBox for input
+One Button
+One TextBox for output
+
+░░░░░░░░░░░░░░░░░░░░░
+░█░█░███░█░░░█░░░███░
+░█░█░█░░░█░░░█░░░█░█░
+░███░██░░█░░░█░░░█░█░
+ ░█░█░█░░░█░░░█░░░█░█░
+░█░█░███░███░███░███░
+░░░░░░░░░░░░░░░░░░░░░
+
+-->
+<html>
+<head>
+
+  <title>LED CODE TEST</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="led.css">
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class='col-md-3'></div>
+    <div class='col-md-6'>
+  <h2>LED to Text</h2>
+  <div id="shadow">
+    <div>
+    <form>
+      <textarea id="led" value="">
+        X___X XXXXX X____ X____ XXXXX
+        X___X X____ X____ X____ X___X
+        XXXXX XXX__ X____ X____ X___X
+        X___X X____ X____ X____ X___X
+        X___X XXXXX XXXXX XXXXX XXXXX
+       </textarea>
+    </form>
+        <div class='col-md-3'></div>
+    <div class='col-md-6'>
+    <button onclick="parseFunction()">Parse to text</button>
+    <form></div>    <div class='col-md-3'></div>
+
+    <textarea id="test"> </textarea>
+    </form>
+      <script type="text/javascript" charset="utf-8">
+     //     document.write("X___X\nX___X\nXXXXX\nX___X\nX___X");
+        function parseFunction() {
+        // var x = document.getElementById("led").value;
+         var screenText ={
+        "X___X\nX___X\nXXXXX\nX___X\nX___X+XXXXX\nX____\nXXX__\nX____\nXXXXX+X____\nX____\nX____\nX____\nXXXXX+X____\nX____\nX____\nX____\nXXXXX+XXXXX\nX___X\nX___X\nX___X\nXXXXX": "HELLO"
+        };
+
+      for(var key in screenText) {
+        var value = screenText[key];
+        console.log(screenText[key]);
+        document.getElementById("test").innerHTML = value;
+        }
+
+    }
+
+     console.log("X___X\nX___X\nXXXXX\nX___X\nX___X");
+     console.log("XXXXX\nX____\nXXX__\nX____\nXXXXX");
+     console.log("X____\nX____\nX____\nX____\nXXXXX");
+     console.log("X____\nX____\nX____\nX____\nXXXXX");
+     console.log("XXXXX\nX___X\nX___X\nX___X\nXXXXX");
+    </script>
+    </div>
+        <div class='col-md-3'></div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+
+</html>
+

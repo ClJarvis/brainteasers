@@ -1,0 +1,28 @@
+form textarea, input{
+  height: 100px;
+  width: 300px;
+  font-weight: bold;
+  vertical-align: top;
+  margin: 10px;
+  border-radius: 10px;
+  border-width: 4px;
+  }
+
+
+button {
+  background-color: #9E9E9E ;
+  border-radius: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+#shadow{
+  background-color: rgba(222, 232, 236, .7);
+  border-radius: 10px;
+}
+
+body{
+  background-color: rgba(222, 232, 236, .2);
+}

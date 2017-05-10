@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>LED CODE TEST</title>
+    <link rel="stylesheet" type="text/css" href="led.css">
+
+</head>
+<body>
+<h2>LED to Text</h2>
+<div id="shadow">
+<div>
+<form>
+
+   <textarea id="led" value="X___X\nX___X\nXXXXX\nX___X\nX___X">
+    X___X
+    X___X
+    XXXXX
+    X___X
+    X___X
+    XXXX\nX____\nXXX__\nX____\nXXXXX
+    X____\nX____\nX____\nX____\nXXXXX
+    X____\nX____\nX____\nX____\nXXXXX
+    XXXXX\nX___X\nX___X\nX___X\nXXXXX
+
+
+  </textarea>
+<!--   <textarea id="led" maxlength="800" value="X___X\nX___X\nXXXXX\nX___X\nX___X"><P>X___X\nX___X\nXXXXX\nX___X\nX___X</P></textarea>-->
+</form>
+<button onclick="parseFunction()">Parse to text</button>
+<form>
+<textarea id="test"> </textarea>
+</form>
+  <script type="text/javascript" charset="utf-8">
+ //     document.write("X___X\nX___X\nXXXXX\nX___X\nX___X");
+    function parseFunction() {
+     var x = document.getElementById("led").value;
+     var dict ={
+    "X___X\nX___X\nXXXXX\nX___X\nX___X": "H",
+    "XXXXX\nX____\nXXX__\nX____\nXXXXX": "E",
+    "X____\nX____\nX____\nX____\nXXXXX": "L",
+    "X____\nX____\nX____\nX____\nXXXXX": "L",
+    "XXXXX\nX___X\nX___X\nX___X\nXXXXX": "O"
+
+};
+      document.getElementById("test").innerHTML = x;
+
+for(i=0; i<1; i++){
+
+for(var key in dict) {
+  var value = dict[key];
+
+   console.log(dict[key]);
+   document.write(dict[key]);
+}
+
+  }
+    //  document.getElementById("test").innerHTML = x;
+}
+  </script>
+<script type="text/javascript">
+
+
+<!-- "X_X\nX_X\nXXX\nX_X\nX_X "-->
+
+//for (var i=0; i <= 100; i++){
+  //console.log("  X_X\nX_X\nXXX\nX_X\nX_X");
+ // };
+//console.log("Hello");
+ //console.log(dict);
+ console.log("X___X\nX___X\nXXXXX\nX___X\nX___X");
+ console.log("XXXXX\nX____\nXXX__\nX____\nXXXXX");
+ console.log("X____\nX____\nX____\nX____\nXXXXX");
+ console.log("X____\nX____\nX____\nX____\nXXXXX");
+ console.log("XXXXX\nX___X\nX___X\nX___X\nXXXXX");
+
+
+</script>
+</div>
+</div>
+</body>
+
+</html>
