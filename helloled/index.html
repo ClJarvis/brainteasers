@@ -48,15 +48,16 @@ One TextBox for output
     </form>
         <div class='col-md-3'></div>
     <div class='col-md-6'>
-    <button onclick="parseFunction()">Parse to text</button>
-    <form></div>    <div class='col-md-3'></div>
-
+     <button onclick="parseText()">Parse to text</button>
+    </div>
+    <div class='col-md-3'></div>
+    <form>
     <textarea id="test"> </textarea>
     </form>
+
+
       <script type="text/javascript" charset="utf-8">
-     //     document.write("X___X\nX___X\nXXXXX\nX___X\nX___X");
-        function parseFunction() {
-        // var x = document.getElementById("led").value;
+        function parseText() {
          var screenText ={
         "X___X\nX___X\nXXXXX\nX___X\nX___X+XXXXX\nX____\nXXX__\nX____\nXXXXX+X____\nX____\nX____\nX____\nXXXXX+X____\nX____\nX____\nX____\nXXXXX+XXXXX\nX___X\nX___X\nX___X\nXXXXX": "HELLO"
         };
